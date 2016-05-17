@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <ScrollView
+        android:fillViewport="true"
+        android:id="@+id/my_scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="推送是维持 APP 留存率最重要的方法之一，但是大多数 APP 开发者都没有正确意识到推送的意义，也没有建立起一套评估 Push 质量的方法。推送是一个典型的双刃剑，如果使用的好可以帮你提升留存率，可是使用不当，甚至滥用将会成为你 APP 的噩梦。但是不幸的是，我看到的大多是推送的不当使用。
+
+1. 给用户一个允许推送的理由
+之前看过一篇文章讲的很好，大概的意思是说你要任何事情的时候都请给一个需要的理由。作为 APP 开发者我们都知道，用户很少会反悔从前做过的设置。我举个简单的例子，如果用户在最初的时候禁止你访问他的通讯录，可能你就再也没有机会访问他的通讯录了。同理，如果用户最初的时候禁止你的推送消息，那么你可能就再也没有机会去为用户发送推送通知了。
+
+所以在希望用户授予推送权限时，一定要给用户一个清晰的理由。以滴滴打车作为举例，如果一个用户第一次打开滴滴打车，就弹出窗口说，你是否允许 APP 为你推送消息，也许这个时候的通过率只有 30%-50%左右。但是我们试想这样一个场景，当用户第一次打车时，APP 提示说，允许弹出窗口可以让你在退出 APP 后依然收到司机的接单信息。那么这个时候被用户允许的概率就大大增大了。
+
+2. 忽略 Push 设置
+我们追溯一下 Push 的鼻祖，在 PC Web 时代我们如何做类似的事情，我们往往做一个网站，然后用 Email 通知用户各类的通知。以豆瓣来举例：我们可以通过 Web 设置在什么情况下会被 Email 通知，例如被关注，被豆邮，日记被评论等等。但是我们却不幸地发现，大多数的 APP 却没有对推送做这样细致的区分。
+
+请大家意识到，Push 的设置其实比 Email 的设置重要得多，因为当你去发不当的邮件去 “打扰” 用户时，用户最多把 Email 忽略，或者作为垃圾邮件。但是当你用不当地推送去打扰用户时，用户去删除 APP 远远比去手机的设置中去关闭推送容易得多！
+
+所以请更细致地去设置你的推送，什么情况下需要推送？什么时候允许推送？是否需要接受更新通知等等。" >
+            </TextView>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/top_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/top_btn_bg"
+        android:gravity="center"
+        android:text="顶"
+        android:visibility="gone" />
+
+</RelativeLayout>
